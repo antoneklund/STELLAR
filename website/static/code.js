@@ -97,7 +97,7 @@ async function fetchArticlesJSON() {
 
 
 function create_plot() {
-    Plotly.d3.csv('static/articles_df.csv', function (err, rows) {
+    Plotly.d3.csv('static/data/articles_df.csv', function (err, rows) {
 
         var data = []
         var labels = []

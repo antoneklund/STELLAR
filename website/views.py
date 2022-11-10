@@ -5,8 +5,8 @@ from website.core import *
 
 views = Blueprint('views', __name__)
 
-articles_df = load_main_df("website/static/articles_df.csv")
-topics_df = load_topics_df("website/static/topics_df.csv")
+articles_df = load_main_df("website/static/data/articles_df.csv")
+topics_df = load_topics_df("website/static/data/topics_df.csv")
 
 
 @views.route('/', methods=['GET', 'POST'])

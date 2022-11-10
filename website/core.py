@@ -3,12 +3,12 @@ from markupsafe import Markup
 import re
 
 
-def load_main_df(path="website/static/articles_df.csv"):
+def load_main_df(path="website/static/data/articles_df.csv"):
     df = pd.read_csv(path, index_col=[0])
     return df
 
 
-def load_topics_df(path="website/static/topics_df.csv"):
+def load_topics_df(path="website/static/data/topics_df.csv"):
     df = pd.read_csv(path, index_col=[0])
     df = df.sort_values("topic_id")
     return df
