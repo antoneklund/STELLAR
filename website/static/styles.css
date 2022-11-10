@@ -1,0 +1,46 @@
+
+.list-group{
+  max-height: 600px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#topics_list{
+  max-width: 500px;
+}
+
+.list-group-item:active{
+  background-color: #de5bde;
+}
+.list-group-item:hover{
+  background-color: #F1EFE4;
+}
+.article-text-box{
+  height: 400px;
+  max-height: 600px;
+  width: 300px;
+  border: 1px solid rgb(121, 115, 115);
+  overflow:scroll;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+}
+#plotly-container{
+  max-width: 800px;
+}
+br {
+  line-height: 2px;
+}
+.panel-body {
+  max-width: 800px;
+}
+.navbar{
+  background-color: #2A4765;
+}
+.text-header{
+  color: #2A4765;
+}

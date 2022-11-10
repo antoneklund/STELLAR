@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block title %}STELLAR{% endblock %} {% block content
+%}
+<h1 class="text-header" align="center">STELLAR</h1>
+<div class="container" align="center">
+  <div class="row">
+    <div id="plotly_container">
+      
+    </div>
+    <div>
+      <h3 class="text-header">Article Text</h3>
+      <div class="article-text-box" align="left" id="article_text">
+        
+      </div>
+  </div>
+</div>
+<button onclick="reset_view()">Reset view</button>
+<div class="container" align="center">
+  <div class="row">
+    <div class="panel panel-primary" id="topic_panel">
+      <div class="panel-heading">
+        <h3 class="panel-title text-header">Topics List</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group" id="topics_list">
+          {% for topic_html in topic_htmls %}
+          {{ 
+            topic_html
+          }}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="panel panel-primary" id="articles_panel">
+      <div class="panel-heading">
+        <h3 class="panel-title text-header">Articles List</h3>
+      </div>
+      <div>
+        <div class="panel-body">
+          <ul class="list-group" id="articles_list">
+            {% for article_html in article_htmls %}
+              {{ 
+                article_html
+              }}
+            {% endfor %}
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="saveState()">Save</button>
+      </div>
+    </div>
+    <div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

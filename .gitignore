@@ -1,0 +1,5 @@
+.vscode
+website/__pycache__
+.venv/
+*.csv
+*.json
