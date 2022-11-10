@@ -15,9 +15,9 @@ pip install -r requirements.txt
 
 ## Files required
 Two files are required to run the app. 
-1. articles_df.csv 
+1. articles_df.csv \n
     The articles and their labels. Must contain the columns ["text", "title", "keywords", "label", "x", "y", "z"]
-2. topics_df.csv
+2. topics_df.csv \n
     The topics list. Must contain the columns ["topic_id", "keywords"] 
 
 
