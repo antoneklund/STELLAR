@@ -3,3 +3,4 @@ website/__pycache__
 .venv/
 *.csv
 *.json
+/private_data
